@@ -1,7 +1,25 @@
 aid: tisenc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tisenc.png
 name: tisenc
-description: tisenc is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: tisenc (天深医疗 / Tianshen Medical) is a Chinese in-vitro diagnostics (IVD)
+  medical-device manufacturer based in Guangdong, backed by Qiming Venture Partners.
+  The company develops chemiluminescence immunoassay analyzers and point-of-care testing
+  (POCT) systems — its ACCRE 8, ACCRE 90, and ACCRE 120 single-sample chemiluminescence
+  platforms and an accompanying reagent menu — together with a digital POCT management
+  platform. It is a nationally recognized high-tech enterprise. tisenc operates a corporate
+  marketing website only (WordPress/Qifeiye, hosted in China); as of this enrichment pass
+  it publishes no public API, developer portal, SDK, or machine-readable specification.
 url: https://raw.githubusercontent.com/api-evangelist/tisenc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Medical Devices
+- In-Vitro Diagnostics
+- Diagnostics
+- Chemiluminescence Immunoassay
+- Point-of-Care Testing
+- Healthcare
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tisenc-domain-security.yml
 - type: Website
   url: https://tisenc.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
